@@ -3,10 +3,10 @@ library(cmdstanr)
 
 set.seed(1234)
 
-N_om <- 50
-N_mo <- 50
-N_oo <- 100
-x <- c(-0.1, 0.25)
+N_om <- 300
+N_mo <- 300
+N_oo <- 300
+x <- c(0.25, 0.15)
 rho <- 0.7
 Omega <- matrix(c(1, rho, rho, 1), 2, 2)
 p_om_1x_true <- pmvnorm(lower = c(x[1], -Inf), upper = c(Inf, Inf), corr = Omega)[1]
